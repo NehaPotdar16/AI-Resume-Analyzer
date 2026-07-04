@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Saira:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Saira", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 48px;
+    width: 48px;
+}
+
+#firstlogo {
+    height: 60px;
+    width: 170px;
+}
+
+.logo p {
+    font-size: 25px;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    height: 12vh;
+}
+
+.nav li a {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 2px 25px 2px 25px;
+    /* color: rgb(137 92 31); */
+    color: rgb(149 106 48);
+}
+
+.nav li a:hover {
+    color: rgb(213 161 75);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.navbutton button {
+    padding: 6px 15px 7px 15px;
+    margin: 0 8px 0 8px;
+    border-radius: 5px;
+    border-color: #ffc01d;
+    background-color: rgb(0, 0, 0);
+}
+
+#get{
+    color: black;
+    background-color: #ffc01d;
+    font-weight: 700;
+}
+
+#get:hover{
+    box-shadow: 0px 0px 0px 2px #d2c4aa, 0px 0px 15px 5px rgba(255, 246, 231, 0.6);
+    transform: translateY(-2px); 
+}
+
+.main{
+    width: 100%;
+    height: 220vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: black; */
+    background-image: url(./Images/back4.jpg);
+    background-size: cover;
+}
+
+.head p{
+    font-size: 20px;
+    text-align: center;
+}
+
+#head-first{
+    font-size: 55px;
+    font-weight: 900;
+    font-family: "Libre Baskerville", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: rgb(255, 195, 45);
+}   
+
+.foot{
+    margin: 50px 0;
+    padding: 0 15px;
+    width: 850px;
+    height: 480px;
+    border: 2px dashed rgb(149 106 48);
+    border-radius: 25px;
+    background-color: #08070d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.foot:hover{
+    box-shadow: 0px 0px 0px 3px rgb(255, 211, 99), 0px 0px 40px 20px rgba(251, 193, 46, 0.536);
+    transform: translateY(-2px); 
+}
+
+.foot-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.name{
+    margin-left: 40px;
+    margin-right: 100px;
+}
+
+.score{
+    border: 2px solid rgb(255, 226, 172);
+    border-radius: 15px;
+    width: 230px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score p{
+    text-align: center;
+}
+
+.foot-bottom{
+    padding: 10px;
+}
+
+.foot-bottom p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto);    
+    gap: 50px;
+}
+
+.footer-contain{
+    width: 400px;
+    height: 220px;
+    border: 2px dashed rgb(149 106 48);
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #0c0a03;
+
+    cursor: pointer;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: transform .4s ease, box-shadow .4s ease;
+}
+
+.footer-contain:hover{
+    transform: perspective(1000px)
+               rotateX(8deg)
+               rotateY(-8deg)
+               scale(1.03);
+
+    box-shadow: 0 20px 40px rgba(251, 193, 46, 0.536);
+}
+
+.footer-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(30px);
+}
+
+.footer-top p{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateZ(20px);
+}
+
+.footer-bottom img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.name-job{
+    margin-left: 25px;
+}
+
+.seventh{
+    width: 100%;
+    height: 90vh;
+    background-image: url(./Images/back2.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seven-block{
+    width: 900px;
+    height: 450px;
+    border: 2px dashed rgb(149 106 48);
+    border-radius: 25px;
+    background-color: #090502;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#seven-p{
+    font-size: 40px;
+    /* font-weight: 800; */
+    font-family: "Libre Baskerville", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    margin: 0 0;
+}
+
+.seven-block p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.seven-block span{
+    color: rgb(149 106 48);
+    font-family: "Libre Baskerville", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.seven-button button{
+    background-color: #090502;
+    padding: 10px 20px;
+    margin: 0 20px;
+    border-radius: 5px;
+    border-color: #ffc01d;
+    font-size: 15px;
+}
+
+#seven-ana{
+    color: black;
+    background-color: #ffc01d;
+    font-weight: 700;
+}
+
+#seven-ana:hover{
+    box-shadow: 0px 0px 0px 2px #d2c4aa, 0px 0px 20px 8px rgba(255, 246, 231, 0.6);
+    transform: translateY(-2px); 
+}
+
+.eighth{
+    width: 100%;
+    height: 25vh;
+    background-color: #060401;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eighth p{
+    font-size: 18px;
+    font-family: "Libre Baskerville", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+

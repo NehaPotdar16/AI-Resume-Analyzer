@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Saira:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Saira", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 48px;
+    width: 48px;
+}
+
+#firstlogo {
+    height: 60px;
+    width: 170px;
+}
+
+.logo p {
+    font-size: 25px;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    height: 12vh;
+}
+
+.nav li a {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 2px 25px 2px 25px;
+    /* color: rgb(137 92 31); */
+    color: rgb(149 106 48);
+}
+
+.nav li a:hover {
+    color: rgb(213 161 75);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.navbutton button {
+    padding: 6px 15px 7px 15px;
+    margin: 0 8px 0 8px;
+    border-radius: 5px;
+    border-color: #ffc01d;
+    background-color: rgb(0, 0, 0);
+}
+
+#get{
+    color: black;
+    background-color: #ffc01d;
+    font-weight: 700;
+}
+
+#get:hover{
+    box-shadow: 0px 0px 0px 2px #d2c4aa, 0px 0px 15px 5px rgba(255, 246, 231, 0.6);
+    transform: translateY(-2px); 
+}
+
+.main{
+    width: 100%;
+    height: 290vh;
+    display: flex;
+}
+
+.left{
+    width: 75vw;
+    height: 290vh;
+    /* background-color: black; */
+    background-image: url(./Images/back11.jpg);
+    background-size: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.head p{
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 80px;
+    padding-bottom: 50px;
+}
+
+.resume{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(5, 330px); 
+    gap: 30px;
+}
+
+.resume-element{
+    width: 230px;
+    /* border: 2px solid white; */
+    border-radius: 15px;
+}
+
+.resume-element img{
+    width: 230px;
+    height: 330px;
+    border-radius: 15px;
+    /* padding: 2px 2px; */
+}
+
+.right{
+    background-color: rgb(35, 35, 35);
+    width: 25vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    top: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.right-image{
+    border: 2px dashed rgb(149 106 48);
+    border-radius: 15px;
+    height: 410px;
+    width: 330px;
+    margin-top: 22px;
+}
+
+.right-button{
+    margin: 20px 0;
+}
+
+.right-button button{
+    padding: 9px 35px 10px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    border-color: #ffc01d;
+    background-color: rgb(0, 0, 0);
+}
+
+#start{
+    color: black;
+    background-color: #ffc01d;
+    font-weight: 800;
+}
+
+#start:hover{
+    /* box-shadow: 0px 0px 0px 2px #ffc01d, 0px 0px 15px 5px rgba(0, 0, 0, 0.6); */
+    box-shadow: 0px 0px 0px 2px #d2c4aa, 0px 0px 15px 5px rgba(255, 246, 231, 0.6);
+    /* transform: translateY(-2px);  */
+}
+
+.right-text{
+    border: 2px solid black;
+    width: 320px;
+    height: 80px;
+}
+
+.eighth{
+    width: 100%;
+    height: 25vh;
+    background-color: #060401;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1050;
+}
+
+.eighth p{
+    font-size: 18px;
+    font-family: "Libre Baskerville", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
